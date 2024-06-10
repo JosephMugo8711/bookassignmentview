@@ -15,6 +15,7 @@ interface ReadingListProps {
 
 const ListContainer = styled('div')({
   marginTop: '16px',
+  width:'100%'
 });
 
 const ReadingList: React.FC<ReadingListProps> = ({ readingList, onRemoveFromReadingList }) => {

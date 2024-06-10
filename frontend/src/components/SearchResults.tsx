@@ -18,6 +18,7 @@ const ResultsGrid = styled('div')({
   gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
   gap: '16px',
   marginTop: '16px',
+   
 });
 
 const SearchResults: React.FC<SearchResultsProps> = ({ books, onAddToReadingList }) => {
