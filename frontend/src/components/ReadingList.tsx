@@ -27,7 +27,13 @@ const ReadingList: React.FC<ReadingListProps> = ({ readingList, onRemoveFromRead
             <Typography color="textSecondary">{book.author}</Typography>
             <Button 
               variant="contained" 
-              className="text-white bg-secondary" 
+              style={{ 
+                backgroundColor: '#FAAD00', 
+                color: 'white', 
+                borderRadius: 8, 
+                padding: '8px 16px', 
+                width: '100%' 
+              }} 
               onClick={() => onRemoveFromReadingList(book)}
             >
               Remove

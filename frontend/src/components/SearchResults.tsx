@@ -36,9 +36,13 @@ const SearchResults: React.FC<SearchResultsProps> = ({ books, onAddToReadingList
             <Typography variant="body2" color="textSecondary">{book.author}</Typography>
             <Button 
               variant="contained" 
-              size="small" 
-              className="text-white bg-primary" 
-              style={{ borderRadius: 8, padding: '8px 16px', width: '100%' }}
+              style={{ 
+                backgroundColor: '#FAAD00', 
+                color: 'white', 
+                borderRadius: 8, 
+                padding: '8px 16px', 
+                width: '100%' 
+              }} 
               onClick={() => onAddToReadingList(book)}
             >
               Add

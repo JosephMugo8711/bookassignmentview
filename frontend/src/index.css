@@ -40,7 +40,6 @@ body {
   color: theme('colors.secondary');
 }
 
-/* You can define custom utilities for background colors if needed */
 .bg-primary {
   background-color: theme('colors.primary');
 }

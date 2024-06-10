@@ -67,7 +67,7 @@ const App: React.FC = () => {
   return (
     <Container>
       <Box className="min-h-screen p-4 bg-gray-100">
-        <Typography variant="h4" className="mb-4 font-bold text-center text-primary">
+        <Typography variant="h4" className="mb-10 font-bold text-center text-primary">
           Book Assignment View
         </Typography>
         <SearchBar 
@@ -75,7 +75,7 @@ const App: React.FC = () => {
           onSearch={handleSearch} 
           onSelectBook={addToReadingList} 
         />
-        <Grid container spacing={3} className="mt-4">
+        <Grid container spacing={3} className="mt-10">
           <Grid item xs={12} md={8}>
             <Typography variant="h5" className="mb-2 font-semibold text-secondary">
               Search Results
