@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ApolloProvider, useQuery } from '@apollo/client';
 import client from './context/client';
@@ -58,7 +57,11 @@ const App: React.FC = () => {
         <Typography variant="h4" className="mb-4 font-bold text-center text-primary">
           Book Assignment View
         </Typography>
-        <SearchBar onSearch={handleSearch} />
+        <SearchBar 
+          books={filteredBooks} 
+          onSearch={handleSearch} 
+          onSelectBook={addToReadingList} 
+        />
         <Grid container spacing={3} className="mt-4">
           <Grid item xs={12} md={8}>
             <Typography variant="h5" className="mb-2 font-semibold text-secondary">
