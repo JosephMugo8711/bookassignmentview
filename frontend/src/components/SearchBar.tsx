@@ -18,7 +18,11 @@ const StyledTextField = styled(TextField)({
   margin: '0 auto',
   width: '100%',
   maxWidth: '500px',
+  marginRight:'100px',
+  marginLeft:'200px',
   backgroundColor: '#fff',
+  // alignItems:'center',
+  // justifyContent:'center',
   borderRadius: '4px',
   '& .MuiOutlinedInput-root': {
     borderRadius: '4px',

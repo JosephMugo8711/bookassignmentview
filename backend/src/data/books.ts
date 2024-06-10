@@ -8,7 +8,7 @@ export const booksData = [
   {
     'title': 'Clever Monster on the Wonder Island',
     'author': 'Jordan Jones',
-    'coverPhotoURL': '/frontend/public/assets/image10.webp',
+    'coverPhotoURL': 'assets/image10.webp',
     'readingLevel': 'I'
   },
   {

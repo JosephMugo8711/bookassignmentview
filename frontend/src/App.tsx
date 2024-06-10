@@ -20,6 +20,19 @@ const App: React.FC = () => {
   const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
   const [readingList, setReadingList] = useState<Book[]>([]);
 
+  // Load reading list from local storage on mount
+  useEffect(() => {
+    const storedReadingList = localStorage.getItem('readingList');
+    if (storedReadingList) {
+      setReadingList(JSON.parse(storedReadingList));
+    }
+  }, []);
+
+  // Save reading list to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('readingList', JSON.stringify(readingList));
+  }, [readingList]);
+
   useEffect(() => {
     if (data) {
       setFilteredBooks(data.books);

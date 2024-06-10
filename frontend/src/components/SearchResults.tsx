@@ -34,7 +34,15 @@ const SearchResults: React.FC<SearchResultsProps> = ({ books, onAddToReadingList
           <CardContent>
             <Typography variant="subtitle1">{book.title}</Typography>
             <Typography variant="body2" color="textSecondary">{book.author}</Typography>
-            <Button size="small" color="primary" onClick={() => onAddToReadingList(book)}>Add</Button>
+            <Button 
+              variant="contained" 
+              size="small" 
+              className="text-white bg-primary" 
+              style={{ borderRadius: 8, padding: '8px 16px', width: '100%' }}
+              onClick={() => onAddToReadingList(book)}
+            >
+              Add
+            </Button>
           </CardContent>
         </Card>
       ))}

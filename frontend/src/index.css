@@ -24,14 +24,6 @@
 }
 
 /* Custom styles */
-.text-primary {
-    @apply text-blue-700;
-  }
-  
-  .text-secondary {
-    @apply text-blue-600;
-  }
-
 body {
   font-family: 'Mulish', sans-serif;
 }
@@ -41,11 +33,20 @@ body {
 }
 
 .text-primary {
-  color: #5ACCCC;
+  color: theme('colors.primary');
 }
 
 .text-secondary {
-  color: #335C6E;
+  color: theme('colors.secondary');
+}
+
+/* You can define custom utilities for background colors if needed */
+.bg-primary {
+  background-color: theme('colors.primary');
+}
+
+.bg-secondary {
+  background-color: theme('colors.secondary');
 }
 
 .text-3xl {
@@ -84,13 +85,12 @@ body {
   padding: 1rem;
 }
 
-
 .dropdown {
-    position: absolute;
-    background: #fff;
-    width: 100%;
-    max-width: 500px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    z-index: 1000;
-  }
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}

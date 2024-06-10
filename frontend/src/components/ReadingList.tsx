@@ -25,7 +25,11 @@ const ReadingList: React.FC<ReadingListProps> = ({ readingList, onRemoveFromRead
           <CardContent>
             <Typography variant="h6">{book.title}</Typography>
             <Typography color="textSecondary">{book.author}</Typography>
-            <Button variant="contained" color="secondary" onClick={() => onRemoveFromReadingList(book)}>
+            <Button 
+              variant="contained" 
+              className="text-white bg-secondary" 
+              onClick={() => onRemoveFromReadingList(book)}
+            >
               Remove
             </Button>
           </CardContent>
