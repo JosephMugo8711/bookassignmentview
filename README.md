@@ -21,12 +21,18 @@ Book Assignment View is a teacher-facing UI application that allows teachers to 
 
 *****
 ## Dependencies
-1.  
+1. Apollo/client
+2. Emotion/react 
+3. Emotion/styled
+4. mui/material
+5. Graphql
+6. React-dom
 *****
 
 ## Technologies Used
 1. Reactjs
 2. Material UI
+3. Tailwind css
 *****
 ## Contact Information
 * Email : 
