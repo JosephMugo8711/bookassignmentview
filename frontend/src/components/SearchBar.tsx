@@ -14,35 +14,35 @@ interface SearchBarProps {
   onSelectBook: (book: Book) => void;
 }
 
-const StyledTextField = styled(TextField)({
+const StyledTextField = styled(TextField)(({ theme }) => ({
   margin: '0 auto',
   width: '100%',
-  maxWidth: 'screen',
-  marginRight:'300px',
-  // marginLeft:'200px',
-  // marginHorizontal:"200px",
   backgroundColor: '#fff',
   borderRadius: '4px',
   '& .MuiOutlinedInput-root': {
     borderRadius: '4px',
-    marginVertical:'100px'
   },
-});
+  [theme.breakpoints.up('lg')]: {
+    width: '50%', 
+    marginLeft: '10rem'
+  },
+}));
 
-const DropdownList = styled(List)({
+const DropdownList = styled(List)(({ theme }) => ({
   position: 'absolute',
   zIndex: 10,
   width: '100%',
-  maxWidth: 'screen',
   backgroundColor: '#fff',
   boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
   marginTop: '4px',
   borderRadius: '4px',
-  height:"500px",
-  overflowY:'scroll',
-  
-});
-
+  maxHeight: '300px',
+  overflowY: 'auto',
+  [theme.breakpoints.up('lg')]: {
+    width: '50%', 
+    marginLeft: '10rem'
+  },
+}));
 const SearchBar: React.FC<SearchBarProps> = ({ books, onSearch, onSelectBook }) => {
   const [inputValue, setInputValue] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
